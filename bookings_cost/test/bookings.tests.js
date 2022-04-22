@@ -1,13 +1,25 @@
-describe('Test function bookingCost', function(){
-    it('It should be able to calculate booking of Wednesday for 5 day', function(){
-        assert(168,75, bookingCost(5, "Wednesday"));
+describe('Test function bookingCost', function () {
+    it('It should be able to calculate booking of Wednesday for 3 day', function () {
+        assert.equal(101.25, bookingCost({
+            check_in_day: 'Wednesday',
+            duration: 3,
+            cat_name: 'Snowy'
+        }));
     });
 
-    it('It should be able to calculate booking of Friday for 2 day', function(){
-        assert(76.5, bookingCost(2, "Friday"));
-    });
+        it('It should be able to calculate booking of Monday for 3 day', function () {
+            assert.equal(135.00, bookingCost({
+                check_in_day: 'Monday',
+                duration: 3,
+                cat_name: 'Snowy'
+            }));
+        });
 
-    it('It should be able to calculate amount for any other day besides Wednesday and Friday', function(){
-        assert(315, bookingCost(7, "Saturday"));
-    });
-});
+         it('It should be able to calculate amount for Friday 3 day', function () {
+                assert.equal(114.75, bookingCost({
+                    check_in_day: 'Friday',
+                    duration: 3,
+                    cat_name: 'Snowy'
+                }));
+            });
+     });
