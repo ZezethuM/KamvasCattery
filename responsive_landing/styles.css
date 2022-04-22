@@ -1,43 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
-
-* {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 body {
-
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Open Sans', sans-serif;
     background-color: snow;
     font-size: 15px;
+    margin: 0 20px 0 20px;
+    width: 100%;
+}
+.main-div {
+    clear: both;
 }
 
 .heading {
     text-align: center;
-    padding-top: 20px;
+    padding: 10px 0 10px 0;
 }
 .about {
     text-align: center;
 }
 .cats-container {
     display: flex;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
-.img{
+h3 {
+    padding-bottom: 10px;
+}
+.imgs{
     float: left;
     width: 200px;
     height: 200px;
-    padding-right: 20px;
+    padding: 0 20px 0 0;
 }
 .cats {
     width: 700px;
-    padding-right: 30px;
+    padding: 0 30px 10px 0;
 }
 .events {
     clear: both;
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 #heading2 {
+    padding-top: 10px;
     text-align: center;
 }
 .more-cats {
@@ -46,11 +51,11 @@ body {
 }
 .inner-div {
     width: 700px;
-    padding-right: 50px;
+    padding: 0 50px 10px 0;
 }
 .about-us {
     clear: both;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .text {
     text-align: center;
@@ -58,15 +63,18 @@ body {
 
 @media only screen and (max-width: 700px) {
 
-    body {
-        width: 100%;
+    header p{
+        text-align: center;
     }
-
+    body {
+        font-size: 30px;
+        width: 700px;
+    }
     .cats-container {
         flex-direction: column;
+        padding-top: 10px;
     }
-   .events {
-       flex-direction: column;
-   }
-    
+    .events { 
+        flex-direction: column;
+    }
 }
