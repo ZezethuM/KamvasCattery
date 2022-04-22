@@ -9,5 +9,5 @@ function bookingCost(booking) {
         discountFactor = 0.85;
     }
     return bookingCost * discountFactor
-
 }
+
